@@ -1,0 +1,158 @@
+@import url(exports/variables.css);
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--text-color);
+    font-family: var(--header-fonts);
+}
+
+a, p, label, li, button{
+    color: var(--text-color);
+    font-family: var(--regular-fonts);
+}
+
+/* STYLING THE HEADER */ 
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid black;
+}
+
+header > a{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    max-width: 50px;
+}
+
+.header_logo{
+    height: 40px;
+    width: 40px;
+    background-color: var(--logo-color);
+    padding: 3px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.nav_ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: var(--primary-color);
+    width: 70%;
+    border: 2px solid var(--text-color);
+    border-top: none;
+    border-radius: 0px 0px 0px 15px;
+    padding: 50px 0px 0px 0px;
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-content: start;
+}
+
+.nav_ul > li{
+    list-style: none;
+    margin: 10px 15px;
+}
+
+.nav_ul > li > a{
+    font-family: var(--header-fonts);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding: 0px 10px;
+    transition: ease-in-out 0.3s;
+}
+
+/* //////// THIS IS FOR CREATING THE HAMBURGER MENU //////// */
+
+nav{
+    display: none;
+    width: 100%;
+}
+
+#hamburger_menu{
+    display: none;
+}
+
+#hamburger_menu:checked ~ nav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 404px;
+}
+
+#menu_icon{
+    font-size: 2rem;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 1.2%;
+    right: 2.5%;
+    padding: 0rem 1.5rem;
+}
+
+#menu_icon:hover{
+    cursor: pointer;
+    position: absolute;
+}
+
+
+
+@media (min-width: 600px) {
+    header{
+        height: 70px;
+        align-items: center;
+    }
+
+    header > a{
+        padding: 10px;
+        height: 60px;
+        max-width: 100px;
+    }
+
+    .header_logo{
+        height: 60px;
+        width: 60px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .nav_ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0px auto;
+        padding: 0px;
+        border: none;
+    }
+    
+    .nav_ul > li{
+        margin: 0px;
+    }
+
+    .nav_ul > li > a{
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    #hamburger_menu:checked ~ nav {
+        display: flex;
+        align-items: center;  
+    }
+    #menu_icon{
+        display: none;
+    }
+}
