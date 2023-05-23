@@ -6,11 +6,13 @@ html{
 
 body{
     background-color: var(--primary-color);
+    margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6{
     color: var(--text-color);
     font-family: var(--header-fonts);
+    text-align: center;
 }
 
 a, p, label, li, button{
@@ -72,7 +74,7 @@ header > a{
     transition: ease-in-out 0.3s;
 }
 
-/* //////// THIS IS FOR CREATING THE HAMBURGER MENU //////// */
+/* Hamburger menu */
 
 nav{
     display: none;
@@ -105,6 +107,53 @@ nav{
     position: absolute;
 }
 
+/* Main */
+
+main{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scaffolding{
+    min-width: 250px;
+    min-height: 300px;
+}
+
+/* Footer */
+
+footer{
+    height: 50px;
+    border-top: 2px solid black;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    max-width: 100%;
+    height: 100%;
+}
+
+.cs_ul > li {
+    list-style-type: none;
+    margin: 5px 0px;
+}
+
+a > i{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    margin: 0px 15px;
+    display: inline;
+}
+
+.footer-div{
+    align-self: flex-start;
+    margin: 0px 10px;
+    background-color: var(--primary-color);
+}
 
 
 @media (min-width: 600px) {

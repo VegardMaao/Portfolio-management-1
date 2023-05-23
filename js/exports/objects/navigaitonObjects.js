@@ -1,10 +1,10 @@
 export const navItems = [{
-    title: "About me",
-    link: ""
-}, {
     title: "Portfolio",
-    link: ""
+    link: "index.html#portfolio"
+}, {
+    title: "About me",
+    link: "index.html#about"
 }, {
     title: "Contact",
-    link: ""
+    link: "index.html#contact"
 }];
