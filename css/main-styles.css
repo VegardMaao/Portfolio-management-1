@@ -123,6 +123,17 @@ main{
     min-height: 300px;
 }
 
+/* Portfolio */
+
+.portfolio-item{
+    max-height: 650px;
+    width: 500px;
+}
+
+.thumbnail{
+    width: 500px;
+}
+
 /* Footer */
 
 footer{
