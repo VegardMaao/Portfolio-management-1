@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6{
 a, p, label, li, button{
     color: var(--text-color);
     font-family: var(--regular-fonts);
+    line-height: 1.4;
 }
 
 /* STYLING THE HEADER */ 
@@ -118,9 +119,8 @@ main{
     align-items: center;
 }
 
-.scaffolding{
-    min-width: 250px;
-    min-height: 300px;
+section{
+    margin: 20px auto;
 }
 
 /* Portfolio */
@@ -136,6 +136,9 @@ main{
     border: 2px solid var(--text-color);
     margin: 15px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .thumbnail{
@@ -145,9 +148,21 @@ main{
 .portfolio-links{
     display: flex;
     justify-content: space-between;
+    border-top: 2px solid var(--text-color);
+}
+
+.portfolio-links > p{
+    font-weight: 600;
 }
 
 /* About */
+
+.about-section{
+    background: var(--text-color);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
 
 .about-me{
     display: flex;
@@ -158,22 +173,36 @@ main{
 .portrait{
     height: 350px;
     border: 2px solid var(--text-color);
-    border-radius: 100%;
     margin: 0px 25px;
 }
 
 .infotext{
-    max-width: 250px;
+    max-width: 350px;
     margin: 15px;
     padding: 15px;
+}
+
+.infotext > * {
+    color: #fff;
 }
 
 .about-header{
     margin: 0px;
 }
 
-h5{
+h1 + h2{
     text-decoration: overline;
+    font-size: 1.2rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-link{
+    color: #fff;
 }
 
 /* Footer */
@@ -184,14 +213,25 @@ footer{
     padding: 0px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: inherit;
     max-width: 100%;
     height: 100%;
 }
 
+.cs_ul{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
 .cs_ul > li {
     list-style-type: none;
     margin: 5px 0px;
+}
+
+.icon{
+    height: 50px;
 }
 
 a > i{
@@ -200,12 +240,6 @@ a > i{
     font-size: 3rem;
     margin: 0px 15px;
     display: inline;
-}
-
-.footer-div{
-    align-self: flex-start;
-    margin: 0px 10px;
-    background-color: var(--primary-color);
 }
 
 

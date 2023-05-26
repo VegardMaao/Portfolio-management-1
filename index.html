@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My name is Vegard Maaø, I am a Front End Dev in training at Noroff Fagskole. You can find my portfolio here">
-    <script src="https://kit.fontawesome.com/efafec28fb.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Tilt+Neon" rel="stylesheet">
-    <link rel="stylesheet" href="css/main-styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My name is Vegard Maaø, I am a Front End Dev in training at Noroff Fagskole. You can find my portfolio here"
+    />
+    <script
+      src="https://kit.fontawesome.com/efafec28fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Tilt+Neon"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main-styles.css" />
     <title>Vegard Maaø - Portfolio</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="logo_banner">
-            <a href="index.html">
-                <img src="" alt="Portfolio site logo" class="header_logo" /></a>
-            <div class="block"></div>
-        </div>
-        <label for="hamburger_menu" class="menubox"><i class="fas fa-bars" id="menu_icon"></i></label>
-        <input type="checkbox" name="hamburger_menu" id="hamburger_menu" />
-        <nav id="navbar">
-            <ul class="nav_ul">
-
-            </ul>
-        </nav>
+      <label for="hamburger_menu" class="menubox"
+        ><i class="fas fa-bars" id="menu_icon"></i
+      ></label>
+      <input type="checkbox" name="hamburger_menu" id="hamburger_menu" />
+      <nav id="navbar">
+        <ul class="nav_ul"></ul>
+      </nav>
     </header>
     <main>
-        <section class="portfolio" id="portfolio">
-            <h2>My Portfolio</h2>
-            <div class="portfolio-container">
-                
-            </div>
-        </section>
+      <section class="about-section" id="about">
+        <div class="about-me">
+          <img
+            src="images/vegard-maao-portrait.jpg"
+            alt="An image of me, Vegard Maaø"
+            class="portrait"
+          />
+          <div class="infotext">
+            <h1 class="about-header">Vegard Maaø</h1>
+            <h2 class="about-header">Front End Developer</h2>
+            <p>
+              My name is Vegard and I am a Front End Developer from Trondheim,
+              Norway.
+            </p>
+            <p>
+              I am currently studing at Noroff Fagskole, but I am looking to
+              work within my field as soon as possible.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="about-section" id="about">
-            <h2>About Me</h2>
-            <div class="about-me">
-                <img src="images/vegard-maao-portrait.jpg" alt="An image of me, Vegard Maaø" class="portrait">
-                <div class="infotext">
-                    <h3 class="about-header">Vegard Maaø</h3>
-                    <h5 class="about-header">Front End Developer</h5>
-                    <p>
-                        My name is Vegard and I am a Front End Developer from Trondheim, Norway.
-                    </p>
-                    <p>
-                        I am currently studing at Noroff Fagskole, but I am looking to work within my field as soon as possible.
-                    </p>
-                </div>
-            </div>
-        </section>
+      <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container"></div>
+      </section>
 
-        <section class="contact" id="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-info infotext">
-                <p>
-                    You can reach me at number <a href="tel:+4790628220">(+47) 90628220</a> or via email
-                    <a href="email:vegardmaao@gmail.com">vegardmaao@gmail.com</a>
-                </p>
-            </div>
-        </section>
+      <section class="about-section contact" id="contact">
+        <div class="infotext">
+          <h2>Contact Me</h2>
+          <p>
+            You can reach me at number
+            <a href="tel:+4790628220" class="contact-link">(+47) 90628220</a> or
+            via email
+            <a href="email:vegardmaao@gmail.com" class="contact-link"
+              >vegardmaao@gmail.com</a
+            >.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-div">
-            <h2 class="cs_header">Footer</h2>
-            <ul class="cs_ul">
-            </ul>
-        </div>
+      <div class="footer-div">
+        <ul class="cs_ul">
+            
+        </ul>
+      </div>
     </footer>
     <script src="js/main-script.js" type="module"></script>
-</body>
-
+  </body>
 </html>
