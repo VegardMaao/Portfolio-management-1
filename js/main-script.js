@@ -19,3 +19,12 @@ createPortfolio(portfolioContainer, portfolioItems);
 //     console.log(window.scrollY)
 //     fixedNav(header, position)
 // });
+
+import { closeMenu } from "./exports/functions/closeMenuOnClick.js";
+const menuCheckBox = document.querySelector("#hamburger_menu");
+const nodeList = document.querySelector(".nav_ul").childNodes;
+for (let i = 0; i < nodeList.length; i++) {
+    nodeList[i].addEventListener("click", e  => {
+        closeMenu(menuCheckBox);
+    })
+}
