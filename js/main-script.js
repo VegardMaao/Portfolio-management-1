@@ -22,21 +22,17 @@ createPortfolio(portfolioContainer, portfolioItems);
 
 import { closeMenu } from "./exports/functions/closeMenuOnClick.js";
 const menuCheckBox = document.querySelector("#hamburger_menu");
-const menuIcon =  document.querySelector("#menu_icon")
-const nodeList = document.querySelector(".nav_ul").childNodes;
+const menuIcon =  document.querySelector("#menu_icon");
+const navUl = document.querySelector(".nav_ul");
+const nodeList = navUl.childNodes;
 for (let i = 0; i < nodeList.length; i++) {
     nodeList[i].addEventListener("click", e  => {
-        if (e.target = `<input type="checkbox" name="hamburger_menu" id="hamburger_menu">` || `<i class="fas fa-bars" id="menu_icon" aria-hidden="true"></i>`){
-            e.stopPropagation();
-            return;
-        }
         closeMenu(menuCheckBox);
     })
 }
 window.addEventListener("click", e => {
-    if (e.target === menuCheckBox || e.target === menuIcon){
+    if (e.target === menuCheckBox || e.target === menuIcon || e.target === navUl){
         return;
     }
-    console.log(e.target)
     closeMenu(menuCheckBox);
 })
