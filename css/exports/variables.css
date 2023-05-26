@@ -1,7 +1,7 @@
 :root{
     --primary-color: #ffffff;
     --header-fonts: 'Golos Text', 'Open Sans', Arial, Helvetica, sans-serif;
-    --regular-fonts: 'Tilt Neon', 'Open Sans', Arial, Helvetica, sans-serif;
+    --regular-fonts: 'Open Sans', Arial, Helvetica, sans-serif;
     --text-color: #14213D;
     --cool-orange: #FCA311;
 }
