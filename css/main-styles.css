@@ -193,6 +193,10 @@ h1 + h2{
     align-items: center;
 }
 
+.infotext > h2{
+    margin: 0px;
+}
+
 .contact-link{
     color: #fff;
 }
