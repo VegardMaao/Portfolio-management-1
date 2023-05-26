@@ -172,7 +172,6 @@ section{
 
 .portrait{
     height: 350px;
-    border: 2px solid var(--text-color);
     margin: 0px 25px;
 }
 
