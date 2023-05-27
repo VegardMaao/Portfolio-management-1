@@ -2,7 +2,9 @@ export function createPortfolio(container, array) {
     for (let i = 0; i < array.length; i++) {
         container.innerHTML += `
         <div class="portfolio-item">
+                    <a href="${array[i].websiteLink}" target="_blank">
                     <h3>${array[i].title}</h3>
+                    </a>
                     <a href="${array[i].websiteLink}" target="_blank">
                         <img src="${array[i].imageUrl}" alt="${array[i].title}" class="thumbnail">
                     </a>
