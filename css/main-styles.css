@@ -279,6 +279,10 @@ fieldset > label{
     margin: 10px 0px 0px 0px;
 }
 
+fieldset > input{
+    height: 25px;
+}
+
 fieldset > input, fieldset > textarea{
     width: 200px;
 }
@@ -318,6 +322,10 @@ textarea{
     font-size: 1.3rem;
     text-align: center;
     font-weight: 600;;
+}
+
+.contact-info{
+    max-width: 225px;
 }
 
 .submit{
