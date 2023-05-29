@@ -13,7 +13,7 @@ export const portfolioItems = [{
 }, {
     title: "Semester Project 2022",
     imageUrl: "/images/comscimuseum.jpg",
-    description: "This was a fun project! The assignment was making a site for a childrens science museum, using basic HTML and CSS. I added some JavaSCript, but it was not part of the assignment. The JS isn't good, but I learned a lot.",
+    description: "This was a fun project! The assignment was making a site for a children's science museum, using basic HTML and CSS. I added some JavaSCript, but it was not part of the assignment. The JS isn't good, but I learned a lot.",
     gitHubLink: "https://github.com/VegardMaao/semester_project_spring22_vegard_maao",
     websiteLink: "https://comscimuseum.netlify.app/"
 }]
