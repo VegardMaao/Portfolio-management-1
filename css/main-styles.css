@@ -186,7 +186,7 @@ section{
 .white{
     color:#fff;
     text-decoration: none;
-    cursor: default;
+    /* cursor: default; */
 }
 
 .infotext > p:nth-of-type(3){
