@@ -25,8 +25,12 @@ a, p, li, label, button{
     line-height: 1.4;
 }
 
-label, button{
+label{
     color: #fff;
+}
+
+button{
+    font-weight: 600;
 }
 
 /* STYLING THE HEADER */ 
